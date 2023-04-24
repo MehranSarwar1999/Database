@@ -16,11 +16,11 @@ do{
 Scanner in = new Scanner(System.in);
 //Try catch to handle checked exception like sqlexception and classnotfound exception.
 try
-{
+{ 
 //Asking user to enter a word.
 System.out.println("Enter a word:");
 String word = in.next();
-//Loading the jdbc driver.
+//Loading the jdbc driver. 
 Class.forName("com.mysql.jdbc.Driver");
 //Establishing Connection.
 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/wordoccurences","root","3306");
